@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscricao</title>
+</head>
+<body>
+<table cellspacing="10" cellpadding="10">
+        <tr>
+            <td ><figure><img src="imagens/logo.png" width="50" height="50" alt="Instrumentos musicais"></figure></td>
+            <td><a href="index.html">Início</a></td>
+            <td><a href="inscricao.html">Inscrição</a></td>
+            <td><a href="horarios.html">Horários</a></td>
+            <td><a href="contato.html">Contato</a></td>
+        </tr>
+         </table>
+        <h1>Formulário de Inscrição</h1>
+        <form action="https://escola.ifrs.edu/cadastro.php " method="get">
+
+ <label for="nome" >Nome completo:</label>
+<br>
+<input type="text" name="nom" id="nome" placeholder="Seu nome" required>
+<br><br>
+<label for="email" >Email:</label>
+<br>
+<input type="email" name="emai" id="email" placeholder="Seu Email" required>
+<br><br>
+<label for="nas">Data de nascimento:</label>
+<br>
+<input type="date" id="nas" name="nacimento" autofocus required>
+<br><br>
+
+
+ <label for="curso_desejado">Curso Desejado:</label><br>
+      <select id="curso_desejado" name="curso_desejado" required>
+
+        
+        <option value="V">Violão</option>
+        <option value="P">Piano</option>
+        <option value="B">Bateria</option>
+      </select>
+
+<br><br>
+<label for="horario">Horario Preferido:</label><br>
+
+ <input type="radio" name="horario" id="manha" value="M" ><!--name igual permite selecionar somente uma caixinha///-->
+<label for="manha">Manhã</label>
+
+<input type="radio" name="horario" id="tarde" value="T"  >
+<label for="tarde">Tarde</label>
+
+<input type="radio" name="horario" id="noite" value="N"  >
+<label for="noite">Noite</label>
+<br><br>
+<input type="submit" >
+<input type="reset">
+
+
+
+        </form>
+
+   
+
+
+
+    
+</body>
+</html>
